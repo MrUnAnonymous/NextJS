@@ -44,10 +44,9 @@ export default function LoginPage() {
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Toaster />
 
-      <h1>{loading ? "Processing" : "Login"}</h1>
-      <hr />
-
-      <label htmlFor="email">email</label>
+      <h1 className="text-4xl">{loading ? "Processing" : "Login"}</h1>
+      <br />
+      <label htmlFor="email">E-mail</label>
       <input
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
         id="email"
@@ -57,7 +56,7 @@ export default function LoginPage() {
         placeholder="email"
       />
 
-      <label htmlFor="password">password</label>
+      <label htmlFor="password">Password</label>
       <input
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
         id="password"
@@ -71,7 +70,7 @@ export default function LoginPage() {
         onClick={onLogin}
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
       >
-        {buttonDisabled ? "No Login" : "Login"}
+        {buttonDisabled ? "NO LOGIN" : "LOGIN"}
       </button>
       <Link href="/signup">Sign Up Page</Link>
       
