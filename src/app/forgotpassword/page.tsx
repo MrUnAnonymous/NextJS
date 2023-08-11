@@ -45,7 +45,7 @@ export default function ForgotPassword() {
   }, [user]);
 
   return (
-    <div className="flex flex-col item-center justify-center min-h-screen py-2">
+    <div className="flex flex-col item-center justify-center min-h-screen py-2 bg-slate-800">
       <h1 className="text-4xl">Forgot Password?</h1>
       <br />
       <label htmlFor="email">Enter Registered Email</label>

@@ -68,7 +68,7 @@ const NewPassword = () => {
   }, [user]);
 
   return (
-    <div className="flex flex-col item-center justify-center min-h-screen py-2">
+    <div className="flex flex-col item-center justify-center min-h-screen py-2 bg-slate-800">
       <Toaster />
 
       <label htmlFor="password">Enter New Password</label>
